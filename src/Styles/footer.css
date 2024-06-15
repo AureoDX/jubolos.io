@@ -1,0 +1,117 @@
+.footer{
+
+    width: 100%;
+    
+    letter-spacing: 1px;
+    
+    }
+    
+    .div-footer-conteudo {
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: var(--color-primary-4);
+    padding: 3rem 3.5rem;
+    
+    }
+    
+    .footer-list{
+    
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 0.75rem;
+        list-style: none;
+        padding: 0;
+        
+        }
+    
+    .footer-list strong {
+    
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-bottom: 0.75rem;
+        
+    }
+    
+    .footer-list p {
+    
+    font-family: Verdana, Geneva, Tahoma, 
+    sans-serif;
+    color: rgb(222, 222, 222);
+    
+    }
+    
+    .footer-list i {
+    
+        color: rgb(222, 222, 222);
+    
+    }
+    
+    .footer-Copy{
+    
+    font-family: Verdana, Geneva, Tahoma, 
+    sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary-4);
+    color: rgb(222, 222, 222);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+    
+    }
+    
+    .btn-whatsapp img{
+    
+    position: fixed;
+    right: 24px;
+    bottom: 14px;
+    max-width: 74px;
+    transition: transform 0.4s;
+    }
+    
+    .btn-whatsapp img:hover {
+    
+    transform: scale(1.1);
+    
+    }
+    
+    @media  screen and (max-width: 1140px) {
+          
+        .div-footer-conteudo {
+    
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 20px;
+            
+            }
+
+        .footer-list strong {
+     
+            font-size: 16px;
+                
+        }
+
+        .footer-list p {
+        
+            font-size: 16px;
+                
+            }
+
+        .footer-Copy {
+        
+            text-align: center;
+                
+            }
+     
+         } 
+    
+    
+    
+    
+    
+    

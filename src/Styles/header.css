@@ -1,0 +1,194 @@
+header {
+
+    padding: 0 4%;
+    background-color: var(--color-primary-4);
+    
+}
+    
+     .nav-conteudo {
+    
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+     }
+    
+     #nav_list {
+    
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       list-style: none;
+       gap: 40px;  
+     
+     }
+    
+     .nav_item a {
+      
+       position: absolute;
+       text-decoration: none;
+       color: var(--color-primary-2);
+       font-weight: 500;
+       font-size: 30px;
+       position: relative;
+       width: 100%;
+       left: 0px;
+       padding: 0 10px;
+        
+     }
+     
+     .nav_item a:after { 
+    
+       content: "";
+       position: absolute;
+       background-color: #da9c34;
+       border-bottom: 10px;
+       width: 0%;
+       height: 3px;
+       left: 0px;
+       bottom: -8px;
+       transition: 0.3s;
+        
+     }
+     .nav_item a:hover:after {  
+      
+       width: 100%; 
+        
+     }
+
+     .btn_peça{
+
+
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--color-primary-1);
+        border-radius: 12px;
+        padding: 10px 12px;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+        color: #ffffffe7;
+        cursor: pointer;
+        transition: background-color 3.s ease;
+         
+      }
+      
+      .btn_peça:hover {
+        
+        background-color: #dbae5f;
+        
+      }
+
+     .logo {  
+      
+       min-width:100px;
+        
+     }
+     .logo img{  
+      
+       width: 150px;
+       height: 150px;
+       
+        
+     }
+
+     #btn_mobile{
+
+      display: none;
+       
+    }
+   
+    #mobile_menu{
+   
+      display: none;
+       
+    }
+
+     @media  screen and (max-width: 1140px) {
+  
+        .nav-conteudo-mobile
+         {
+       
+           padding-bottom: 5px;
+          
+         }
+        
+        .nav-conteudo-mobile ul li{
+        
+          list-style: none;
+          margin-top: 10%;
+          
+        }
+        
+           .nav-conteudo-mobile ul li a { 
+        
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            padding: 10px 10px;
+            display: block;
+            
+          }
+        
+          .nav-conteudo-mobile a:hover{ 
+            
+            background-color: var(--color-primary-1);
+          
+            
+          }
+
+         .btn_peça
+         {
+       display: none;
+       
+         }
+
+         #nav_list,
+         .nav-conteudo .btn_default
+         {
+       
+           display: none;
+       
+         }
+       
+         #btn_mobile{
+       
+           display: block;
+           border: none;
+           background-color: transparent;
+           color: var(--color-primary-1);
+           font-size: 2rem;
+           cursor: pointer; 
+            
+         }
+       
+         #mobile_menu.active {
+       
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+            
+         } 
+       
+         #nav_list_mobile {
+          
+           display: flex;
+           flex-direction: column;
+           gap: 12px;
+           margin: 20px 0px;
+            
+         } 
+       
+         #nav_list_mobile .nav_item{
+       
+           list-style: none;
+           text-align: center;
+            
+         } 
+     
+         }
